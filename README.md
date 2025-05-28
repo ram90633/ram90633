@@ -1,11 +1,11 @@
 <h1 align="center">Hi 👋, I'm YARLAGADDA ABHIRAM</h1>
 <h3 align="center">A passionate Data Anaylst</h3>
-
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=ram90633&label=Profile%20views&color=0e75b6&style=flat" alt="ram90633" /> </p>
-
-- 📝 Refer my LinkedIn [https://www.linkedin.com/in/y-abhiram/](https://www.linkedin.com/in/y-abhiram/)
+<img align ="right" alt="coding" width="400" src="https://png.pngtree.com/thumb_back/fh260/background/20250120/pngtree-a-cartoon-boy-wearing-glasses-and-hoodie-is-coding-on-his-image_16934156.jpg
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=ram90633&label=Profile%20views&color=0e75b6&style=flat" alt="ram90633" /> </p>">
 
 - 📫 How to reach me **yarlagaddaabhi5@gmail.com**
+
+- 📝 Refer my LinkedIn [https://www.linkedin.com/in/y-abhiram/](https://www.linkedin.com/in/y-abhiram/)
 
 - 📄 Know about my experiences [https://drive.google.com/file/d/1DNJEgDe6Dcn2EAHqUwWGhaxcNbaLYm6c/view?usp=sharing](https://drive.google.com/file/d/1DNJEgDe6Dcn2EAHqUwWGhaxcNbaLYm6c/view?usp=sharing)
 
