@@ -1,17 +1,58 @@
 import React, { useState } from 'react';
-import { Search, Heart, ShoppingBag, User, Menu, X } from 'lucide-react';
+import { Search, Heart, ShoppingBag, User, Menu, X, LogOut } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { motion, AnimatePresence } from 'framer-motion';
+import { authService } from '../services/authService';
+import toast from 'react-hot-toast';
 
 const Header: React.FC = () => {
   const { state, dispatch } = useApp();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const [showUserMenu, setShowUserMenu] = useState(false);
 
   const cartItemsCount = state.cart.reduce((total, item) => total + item.quantity, 0);
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     dispatch({ type: 'SET_SEARCH_QUERY', payload: e.target.value });
+  };
+
+  const handleCategoryClick = (category: string) => {
+    dispatch({ type: 'SET_SELECTED_CATEGORY', payload: category });
+    dispatch({ type: 'SET_CURRENT_PAGE', payload: 'category' });
+    setIsMenuOpen(false);
+  };
+
+  const handleHomeClick = () => {
+    dispatch({ type: 'SET_CURRENT_PAGE', payload: 'home' });
+    dispatch({ type: 'SET_SELECTED_CATEGORY', payload: 'All' });
+    dispatch({ type: 'SET_SEARCH_QUERY', payload: '' });
+  };
+
+  const handleCartClick = () => {
+    if (cartItemsCount > 0) {
+      dispatch({ type: 'SET_CURRENT_PAGE', payload: 'cart' });
+    } else {
+      toast.error('Your cart is empty');
+    }
+  };
+
+  const handleAuthClick = () => {
+    if (state.user) {
+      setShowUserMenu(!showUserMenu);
+    } else {
+      dispatch({ type: 'SET_SHOW_AUTH_MODAL', payload: true });
+      dispatch({ type: 'SET_AUTH_MODE', payload: 'login' });
+    }
+  };
+
+  const handleLogout = () => {
+    authService.logout();
+    dispatch({ type: 'SET_USER', payload: null });
+    dispatch({ type: 'CLEAR_CART' });
+    dispatch({ type: 'REMOVE_FROM_WISHLIST', payload: '' });
+    setShowUserMenu(false);
+    toast.success('Logged out successfully');
   };
 
   return (
@@ -20,9 +61,12 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-display font-bold bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent">
+            <button
+              onClick={handleHomeClick}
+              className="text-2xl font-display font-bold bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent hover:scale-105 transition-transform"
+            >
               GlamourHub
-            </h1>
+            </button>
           </div>
 
           {/* Search Bar - Desktop */}
@@ -61,6 +105,7 @@ const Header: React.FC = () => {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
+              onClick={handleCartClick}
               className="relative p-2 text-secondary-600 hover:text-primary-600 transition-colors"
             >
               <ShoppingBag className="w-6 h-6" />
@@ -76,13 +121,53 @@ const Header: React.FC = () => {
             </motion.button>
 
             {/* User Profile */}
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className="p-2 text-secondary-600 hover:text-primary-600 transition-colors"
-            >
-              <User className="w-6 h-6" />
-            </motion.button>
+            <div className="relative">
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={handleAuthClick}
+                className="p-2 text-secondary-600 hover:text-primary-600 transition-colors flex items-center space-x-2"
+              >
+                {state.user?.avatar ? (
+                  <img 
+                    src={state.user.avatar} 
+                    alt={state.user.name}
+                    className="w-6 h-6 rounded-full"
+                  />
+                ) : (
+                  <User className="w-6 h-6" />
+                )}
+                {state.user && (
+                  <span className="hidden md:block text-sm font-medium">
+                    {state.user.name.split(' ')[0]}
+                  </span>
+                )}
+              </motion.button>
+
+              {/* User Menu Dropdown */}
+              <AnimatePresence>
+                {showUserMenu && state.user && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-secondary-200 py-2"
+                  >
+                    <div className="px-4 py-2 border-b border-secondary-100">
+                      <p className="font-medium text-secondary-900">{state.user.name}</p>
+                      <p className="text-sm text-secondary-600">{state.user.email}</p>
+                    </div>
+                    <button
+                      onClick={handleLogout}
+                      className="w-full px-4 py-2 text-left text-secondary-700 hover:bg-secondary-50 flex items-center space-x-2"
+                    >
+                      <LogOut className="w-4 h-4" />
+                      <span>Logout</span>
+                    </button>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
 
             {/* Mobile Menu Button */}
             <button
@@ -119,18 +204,42 @@ const Header: React.FC = () => {
             className="md:hidden bg-white border-t border-secondary-200"
           >
             <div className="px-4 py-4 space-y-4">
-              <a href="#" className="block text-secondary-700 hover:text-primary-600 transition-colors">
+              <button 
+                onClick={() => handleCategoryClick('Makeup')}
+                className="block text-secondary-700 hover:text-primary-600 transition-colors"
+              >
                 Makeup
-              </a>
-              <a href="#" className="block text-secondary-700 hover:text-primary-600 transition-colors">
+              </button>
+              <button 
+                onClick={() => handleCategoryClick('Skincare')}
+                className="block text-secondary-700 hover:text-primary-600 transition-colors"
+              >
                 Skincare
-              </a>
-              <a href="#" className="block text-secondary-700 hover:text-primary-600 transition-colors">
+              </button>
+              <button 
+                onClick={() => handleCategoryClick('Haircare')}
+                className="block text-secondary-700 hover:text-primary-600 transition-colors"
+              >
                 Haircare
-              </a>
-              <a href="#" className="block text-secondary-700 hover:text-primary-600 transition-colors">
+              </button>
+              <button 
+                onClick={() => handleCategoryClick('Fragrance')}
+                className="block text-secondary-700 hover:text-primary-600 transition-colors"
+              >
                 Fragrance
-              </a>
+              </button>
+              <button 
+                onClick={() => handleCategoryClick('Bath & Body')}
+                className="block text-secondary-700 hover:text-primary-600 transition-colors"
+              >
+                Bath & Body
+              </button>
+              <button 
+                onClick={() => handleCategoryClick("Men's Grooming")}
+                className="block text-secondary-700 hover:text-primary-600 transition-colors"
+              >
+                Men's Grooming
+              </button>
             </div>
           </motion.div>
         )}

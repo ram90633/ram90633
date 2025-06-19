@@ -8,6 +8,7 @@ const FeaturedCategories: React.FC = () => {
 
   const handleCategoryClick = (categoryName: string) => {
     dispatch({ type: 'SET_SELECTED_CATEGORY', payload: categoryName });
+    dispatch({ type: 'SET_CURRENT_PAGE', payload: 'category' });
   };
 
   return (
@@ -30,7 +31,7 @@ const FeaturedCategories: React.FC = () => {
         </motion.p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {categories.map((category, index) => (
           <motion.div
             key={category.id}

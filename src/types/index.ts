@@ -30,6 +30,8 @@ export interface User {
   name: string;
   email: string;
   avatar?: string;
+  cart?: CartItem[];
+  wishlist?: Product[];
 }
 
 export interface Review {
@@ -49,4 +51,25 @@ export interface Category {
   name: string;
   image: string;
   subcategories: string[];
+}
+
+export interface Order {
+  id: string;
+  userId: string;
+  items: CartItem[];
+  total: number;
+  deliveryDate: Date;
+  address: string;
+  status: 'pending' | 'confirmed' | 'shipped' | 'delivered';
+  createdAt: Date;
+}
+
+export interface Address {
+  id: string;
+  name: string;
+  street: string;
+  city: string;
+  state: string;
+  zipCode: string;
+  phone: string;
 }

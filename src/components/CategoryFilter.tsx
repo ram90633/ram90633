@@ -8,6 +8,13 @@ const CategoryFilter: React.FC = () => {
 
   const allCategories = ['All', ...categories.map(cat => cat.name)];
 
+  const handleCategoryClick = (category: string) => {
+    dispatch({ type: 'SET_SELECTED_CATEGORY', payload: category });
+    if (category !== 'All') {
+      dispatch({ type: 'SET_CURRENT_PAGE', payload: 'category' });
+    }
+  };
+
   return (
     <div className="bg-white shadow-sm border-b border-secondary-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,7 +24,7 @@ const CategoryFilter: React.FC = () => {
               key={category}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => dispatch({ type: 'SET_SELECTED_CATEGORY', payload: category })}
+              onClick={() => handleCategoryClick(category)}
               className={`whitespace-nowrap px-4 py-2 rounded-full font-medium transition-all duration-300 ${
                 state.selectedCategory === category
                   ? 'bg-primary-500 text-white shadow-lg'
