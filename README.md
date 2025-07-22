@@ -1,123 +1,90 @@
-<div id="header" align="center">
-  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
+<div align="center">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF45sm0ylUYN6DvGj3JEKDWYFUoPCmVrmDUxg1dezw9ZrW9CcfivW0cNhVzayXZykfWWSw&s" alt="Cover Image" width="150px"/>
+  
   <h1 align="center">Hi 👋, I'm Abhiram Yarlagadda</h1>
-  <h3 align="center">A Data Science Enthusiast & Full Stack Developer transforming data into impactful solutions.</h3>
-  <p align="center">
-    <a href="https://www.linkedin.com/in/y-abhiram/" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-    </a>
-    <a href="https://leetcode.com/u/ayarabhi/" target="_blank">
-      <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black" alt="LeetCode"/>
-    </a>
-     <a href="mailto:yarlagaddaabhi5@gmail.com">
-      <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
-    </a>
-  </p>
-  <p align="center">
-    <img src="https://komarev.com/ghpvc/?username=ram90633&label=PROFILE%20VIEWS&color=0e75b6&style=flat-square" alt="Profile views" />
-  </p>
+  
+  <h3 align="center">A Data Science & Machine Learning Enthusiast specializing in building intelligent applications.</h3>
 </div>
+
+---
+
+### 🤝 Connect with Me
+
+<table align="center">
+  <tr>
+    <td align="center" width="120">
+      <a href="https://www.linkedin.com/in/y-abhiram/" target="_blank">
+        <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Yarlagadda Abhiram LinkedIn" height="40" width="40" />
+        <br />
+        LinkedIn
+      </a>
+    </td>
+    <td align="center" width="120">
+      <a href="https://leetcode.com/u/ayarabhi/" target="_blank">
+        <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="Yarlagadda Abhiram LeetCode" height="40" width="40" />
+        <br />
+        LeetCode
+      </a>
+    </td>
+    <td align="center" width="120">
+      <a href="mailto:yarlagaddaabhi5@gmail.com" target="_blank">
+        <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Yarlagadda Abhiram Email" height="40" width="40" />
+        <br />
+        Gmail
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
 ### 👨‍💻 About Me
 
-- 🎓 I'm a **Computer Science (Data Science)** undergraduate at **GITAM University**.
+I'm a **Computer Science** undergraduate at **GITAM University**, with a deep passion for **Data Science**. My goal is to leverage data to solve complex problems and build applications that are not only functional but also intelligent. I enjoy diving into datasets, uncovering patterns, and applying machine learning models to create real-world impact.
 
-- 🧠 My focus is on leveraging **Machine Learning** and **Deep Learning** to build intelligent, data-driven applications.
-
-- 💻 I'm passionate about the intersection of **Web Development** and **Artificial Intelligence**.
-
-- 🌱 I’m always learning and exploring new technologies to solve complex problems.
-
-- 📄 You can view my resume for more details: **[Download Resume](https://drive.google.com/file/d/1R7NoyrarkRltmyuUezm82FrlE6CKSExj/view?usp=sharing)**
+- 🔭 I’m currently working on a **Deep Learning project for real-time object detection**.
+- 🧠 I'm passionate about the intersection of **Web Development** and **Artificial Intelligence**.
+- 🌱 I’m always learning and exploring new technologies in the world of AI and software development.
 
 ---
 
-### 🛠️ My Tech Stack
+### 🛠️ My Tech Stack & Skills
 
-Here are the primary technologies I work with:
-
+#### Languages & Databases
 <p align="center">
-  <strong>Data Science & Machine Learning</strong><br/><br/>
-  <a href="https://www.python.org" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> 
-    <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> 
-  </a> 
-  <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> 
-    <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> 
-  </a>
-  <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> 
-  </a>
-  <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> 
-  </a>
-  <a href="https://opencv.org/" target="_blank" rel="noreferrer"> 
-    <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> 
-  </a> 
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sql&logoColor=white" alt="SQL"/>
+  <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R"/>
 </p>
 
-<p align="center">
-  <strong>Web Development & Databases</strong><br/><br/>
-  <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> 
-  </a>
-  <a href="https://nodejs.org" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> 
-  </a>
-  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> 
-  </a> 
-  <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> 
-  </a>
-  <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> 
-  </a>
-</p>
+#### Core CS Concepts
+<ul>
+  <li>Data Structures & Algorithms (DSA)</li>
+  <li>Database Management Systems (DBMS)</li>
+  <li>Operating Systems (OS)</li>
+  <li>Data Mining</li>
+</ul>
 
+#### Developer Tools
 <p align="center">
-  <strong>Other Programming Languages</strong><br/><br/>
-  <a href="https://www.java.com" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> 
-  </a> 
+  <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  <img src="https://img.shields.io/badge/Visual_Studio_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code"/>
+  <img src="https://img.shields.io/badge/Fusion_360-3E86D3?style=for-the-badge&logo=autodesk&logoColor=white" alt="Fusion 360"/>
 </p>
 
 ---
 
-### 📊 My GitHub Stats
+### 📊 My GitHub Stats & Activity
 
 <p align="center">
-  <img 
-    src="https://github-readme-stats.vercel.app/api?username=ram90633&show_icons=true&theme=radical&icon_color=8344D3&rank_icon=github" 
-    alt="Abhiram's GitHub Stats"
-    width="400"
-  />
-  <img 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=ram90633&layout=compact&theme=radical" 
-    alt="Top Languages"
-    width="320"
-  />
+  <img src="https://github-readme-stats.vercel.app/api?username=ram90633&show_icons=true&theme=catppuccin_latte&icon_color=8839ef&rank_icon=github" alt="Abhiram's GitHub Stats" width="400"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ram90633&layout=compact&theme=catppuccin_latte" alt="Top Languages" width="320"/>
 </p>
-
 <p align="center">
-  <img 
-    src="https://github-readme-streak-stats.herokuapp.com/?user=ram90633&theme=radical" 
-    alt="GitHub Streak" 
-  />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ram90633&theme=catppuccin_latte" alt="GitHub Streak" />
 </p>
