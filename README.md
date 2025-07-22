@@ -20,13 +20,6 @@
       </a>
     </td>
     <td align="center" width="120">
-      <a href="https://leetcode.com/u/ayarabhi/" target="_blank">
-        <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="Yarlagadda Abhiram LeetCode" height="40" width="40" />
-        <br />
-        LeetCode
-      </a>
-    </td>
-    <td align="center" width="120">
       <a href="mailto:yarlagaddaabhi5@gmail.com" target="_blank">
         <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Yarlagadda Abhiram Email" height="40" width="40" />
         <br />
